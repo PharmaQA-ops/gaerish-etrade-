@@ -1,0 +1,27 @@
+# Operating System
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+
+# Node
+node_modules/
+
+# Build
+dist/
+build/
+
+# Temporary uploads
+temp/

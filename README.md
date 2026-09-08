@@ -1,57 +1,68 @@
 # Gaerish E-Trade
 
-Digital website for Gaerish Logistics Pvt Ltd.
+Official website for Gaerish E-Trade.
 
-## Project Type
+## Business
 
-Static HTML / CSS / JavaScript website.
+Gaerish E-Trade is focused on trading products and materials,
+including:
 
-## Current Status
+- Containers
+- Aluminium
+- Metals & Scrap
+- Other Materials
 
-Phase 1 - Website UI
+## Website
 
-No backend or database is currently connected.
+This is currently a static website built using:
 
-## Structure
+- HTML5
+- CSS3
+- JavaScript
+
+## Project Structure
 
 gaerish-etrade/
-│
+
 ├── index.html
-│
+
 ├── pages/
 │   ├── about.html
-│   ├── services.html
-│   ├── contact.html
-│   └── login.html
-│
+│   ├── products.html
+│   └── contact.html
+
 ├── css/
 │   ├── style.css
 │   └── responsive.css
-│
+
 ├── js/
 │   └── main.js
-│
+
 ├── images/
 │   ├── logo/
 │   ├── banner/
-│   └── services/
-│
+│   └── products/
+
 ├── documents/
-│
 ├── README.md
 └── .gitignore
 
+## Current Scope
+
+This version is a static corporate trading website.
+
+No:
+
+- Customer login
+- Online marketplace
+- Buy/Sell portal
+- Payment system
+- Database
+- ERP integration
+- Logistics module
+
+are currently included.
+
 ## Future Development
 
-Possible future modules:
-
-- Customer Login
-- Shipment Booking
-- Shipment Tracking
-- Quotation Request
-- Document Management
-- Invoice Management
-- Customer Dashboard
-- Notifications
-- API Integration
-- ERP Integration
+Future functionality can be added if required.

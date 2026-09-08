@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Login | Gaerish E-Trade</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <style>
+
+        .login-section {
+            min-height: calc(100vh - 76px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f5f7fa;
+        }
+
+        .login-box {
+            width: 100%;
+            max-width: 420px;
+            background: #ffffff;
+            padding: 45px;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+        }
+
+        .login-box h1 {
+            margin: 10px 0;
+        }
+
+        .login-box p {
+            color: #667085;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 7px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #d9dde5;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .form-group input:focus {
+            border-color: #172033;
+        }
+
+        .login-submit {
+            width: 100%;
+            border: none;
+            cursor: pointer;
+        }
+
+        .login-note {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+    <div class="container nav-container">
+
+        <a href="../index.html" class="logo">
+
+            <span class="logo-main">GAERISH</span>
+            <span class="logo-sub">E-TRADE</span>
+
+        </a>
+
+    </div>
+
+</header>
+
+
+<section class="login-section">
+
+    <div class="login-box">
+
+        <span class="eyebrow">
+            E-TRADE PORTAL
+        </span>
+
+        <h1>
+            Welcome Back
+        </h1>
+
+        <p>
+            Sign in to access your Gaerish E-Trade account.
+        </p>
+
+
+        <form id="loginForm">
+
+            <div class="form-group">
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="password">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    required
+                >
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn btn-primary login-submit">
+
+                Login
+
+            </button>
+
+        </form>
+
+
+        <p class="login-note">
+            Authentication will be connected in a future phase.
+        </p>
+
+    </div>
+
+</section>
+
+
+<script>
+
+document
+    .getElementById("loginForm")
+    .addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        alert(
+            "Login system is currently under development."
+        );
+
+    });
+
+</script>
+
+
+</body>
+
+</html>

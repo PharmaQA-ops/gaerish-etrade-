@@ -1,0 +1,419 @@
+/* =========================================
+   GAERISH E-TRADE
+   MAIN STYLESHEET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #172033;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+    background: #ffffff;
+    border-bottom: 1px solid #e8ebf0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.logo-main {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.logo-sub {
+    font-size: 10px;
+    letter-spacing: 4px;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+
+/* NAVIGATION */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.navbar a {
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    opacity: 0.6;
+}
+
+.login-btn {
+    padding: 11px 22px;
+    border: 1px solid #172033;
+    border-radius: 5px;
+}
+
+.login-btn:hover {
+    background: #172033;
+    color: #ffffff;
+    opacity: 1 !important;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    background: #f5f7fa;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    font-size: 60px;
+    line-height: 1.05;
+    margin: 20px 0;
+    letter-spacing: -2px;
+}
+
+.hero h1 span {
+    display: block;
+}
+
+.hero p {
+    max-width: 600px;
+    font-size: 18px;
+    color: #667085;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+
+/* BUTTONS */
+
+.btn {
+    display: inline-block;
+    padding: 14px 26px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #172033;
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    border: 1px solid #172033;
+}
+
+.btn-secondary:hover {
+    background: #172033;
+    color: #ffffff;
+}
+
+.btn-light {
+    background: #ffffff;
+    color: #172033;
+}
+
+
+/* =========================================
+   DASHBOARD CARD
+========================================= */
+
+.hero-card {
+    display: flex;
+    justify-content: center;
+}
+
+.dashboard-card {
+    width: 100%;
+    max-width: 430px;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.status {
+    font-size: 10px;
+    padding: 5px 9px;
+    border-radius: 20px;
+    background: #e8f5e9;
+}
+
+.shipment-number {
+    font-size: 28px;
+    font-weight: 800;
+    margin: 30px 0;
+}
+
+.shipment-route {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.shipment-route small {
+    display: block;
+    color: #8a94a6;
+    font-size: 9px;
+    margin-bottom: 4px;
+}
+
+.shipment-route strong {
+    font-size: 13px;
+}
+
+.route-line {
+    color: #8a94a6;
+    font-size: 12px;
+}
+
+.progress {
+    height: 6px;
+    background: #e8ebef;
+    margin: 35px 0 12px;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    width: 70%;
+    height: 100%;
+    background: #172033;
+    border-radius: 10px;
+}
+
+.shipment-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #667085;
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.features {
+    padding: 100px 0;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 60px;
+}
+
+.section-heading h2 {
+    font-size: 42px;
+    line-height: 1.15;
+    margin: 15px 0;
+}
+
+.section-heading p {
+    color: #667085;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.feature-card {
+    padding: 30px;
+    border: 1px solid #e6e9ee;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+}
+
+.feature-icon {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.feature-card p {
+    color: #667085;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.cta {
+    padding: 80px 0;
+    background: #172033;
+    color: #ffffff;
+}
+
+.cta-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.cta h2 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.cta p {
+    color: #c5cad3;
+}
+
+.btn-light:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+    background: #0d1422;
+    color: #ffffff;
+    padding-top: 70px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 50px;
+    padding-bottom: 60px;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer p {
+    color: #aab2c0;
+    font-size: 13px;
+}
+
+.footer h4 {
+    margin-bottom: 20px;
+}
+
+.footer a {
+    display: block;
+    color: #aab2c0;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.footer a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    border-top: 1px solid #263044;
+    padding: 20px 0;
+    color: #7f899a;
+    font-size: 12px;
+}

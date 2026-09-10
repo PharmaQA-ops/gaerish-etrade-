@@ -142,11 +142,46 @@ img {
 .hero {
     min-height: 680px;
 
-    background: #f4f6f8;
+    position: relative;
 
     display: flex;
+
     align-items: center;
+
+    overflow: hidden;
+
+    /* YOUR ACTUAL HERO IMAGE */
+    background-image: url("../images/banner/hero.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
 }
+
+
+/* HERO DARK / WHITE OVERLAY */
+
+.hero-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.96) 0%,
+            rgba(255, 255, 255, 0.88) 38%,
+            rgba(255, 255, 255, 0.35) 70%,
+            rgba(255, 255, 255, 0.15) 100%
+        );
+}
+
+
+/* HERO CONTENT */
 
 .hero-content {
     display: grid;
@@ -158,19 +193,22 @@ img {
     gap: 80px;
 
     align-items: center;
+
+    position: relative;
+
+    z-index: 1;
 }
 
-.eyebrow {
-    font-size: 11px;
-    font-weight: 800;
 
-    letter-spacing: 2.5px;
+/* HERO TEXT */
 
-    text-transform: uppercase;
+.hero-text {
+    max-width: 680px;
 }
 
 .hero h1 {
     font-size: 66px;
+
     line-height: 1.02;
 
     letter-spacing: -3px;
@@ -192,11 +230,100 @@ img {
     margin-bottom: 32px;
 }
 
+
+/* HERO BUTTONS */
+
 .hero-buttons {
     display: flex;
+
     gap: 14px;
 }
 
+
+/* HERO VISUAL */
+
+.hero-visual {
+    display: flex;
+
+    justify-content: center;
+}
+
+.hero-panel {
+    width: 100%;
+
+    max-width: 460px;
+
+    min-height: 480px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(23, 32, 51, 0.96),
+            rgba(48, 59, 80, 0.92)
+        );
+
+    color: #ffffff;
+
+    padding: 35px;
+
+    position: relative;
+
+    box-shadow:
+        0 25px 70px
+        rgba(0, 0, 0, 0.20);
+}
+
+.panel-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    font-weight: 800;
+}
+
+.panel-content {
+    position: absolute;
+
+    left: 35px;
+
+    right: 35px;
+
+    bottom: 40px;
+}
+
+.panel-label {
+    font-size: 10px;
+
+    letter-spacing: 2px;
+}
+
+.panel-content h2 {
+    font-size: 43px;
+
+    line-height: 1.1;
+
+    margin: 20px 0;
+}
+
+.panel-line {
+    height: 1px;
+
+    width: 70px;
+
+    background: #ffffff;
+
+    margin-bottom: 20px;
+}
+
+.panel-content p {
+    color: #c7ccd5;
+
+    font-size: 14px;
+}
 
 /* =========================================
    BUTTONS

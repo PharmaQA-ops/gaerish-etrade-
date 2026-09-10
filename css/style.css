@@ -687,3 +687,18 @@ img {
 
     font-size: 11px;
 }
+.container-image {
+    background: url("../images/products/containers.jpg") center/cover no-repeat;
+}
+
+.aluminium-image {
+    background: url("../images/products/aluminium.jpg") center/cover no-repeat;
+}
+
+.metals-image {
+    background: url("../images/products/metals.jpg") center/cover no-repeat;
+}
+
+.other-image {
+    background: url("../images/products/other-materials.jpg") center/cover no-repeat;
+}

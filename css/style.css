@@ -135,11 +135,11 @@ img {
 
 
 /* =========================================
-   HERO
+   PAGE HERO
 ========================================= */
 
 .hero {
-    min-height: 680px;
+    min-height: 520px;
 
     position: relative;
 
@@ -149,9 +149,6 @@ img {
 
     overflow: hidden;
 
-    /* YOUR ACTUAL HERO IMAGE */
-    background-image: url("../images/banner/hero.jpg");
-
     background-size: cover;
 
     background-position: center;
@@ -160,7 +157,31 @@ img {
 }
 
 
-/* HERO DARK / WHITE OVERLAY */
+/* HOME */
+
+.home-hero {
+    background-image:
+        url("../images/banner/hero.jpg");
+}
+
+
+/* ABOUT */
+
+.about-hero {
+    background-image:
+        url("../images/banner/about.jpg");
+}
+
+
+/* CONTACT */
+
+.contact-hero {
+    background-image:
+        url("../images/banner/contact.jpg");
+}
+
+
+/* HERO OVERLAY */
 
 .hero-overlay {
     position: absolute;
@@ -172,32 +193,21 @@ img {
     background:
         linear-gradient(
             90deg,
-            rgba(255, 255, 255, 0.96) 0%,
-            rgba(255, 255, 255, 0.88) 38%,
-            rgba(255, 255, 255, 0.35) 70%,
-            rgba(255, 255, 255, 0.15) 100%
+            rgba(255, 255, 255, 0.94) 0%,
+            rgba(255, 255, 255, 0.82) 45%,
+            rgba(255, 255, 255, 0.30) 100%
         );
 }
 
 
 /* HERO CONTENT */
 
-.hero-content {
-    display: grid;
-
-    grid-template-columns:
-        1.05fr
-        0.95fr;
-
-    gap: 80px;
-
-    align-items: center;
-
+.hero-content,
+.hero > .container {
     position: relative;
 
     z-index: 1;
 }
-
 
 /* HERO TEXT */
 

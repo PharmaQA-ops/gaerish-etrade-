@@ -73,19 +73,17 @@ img {
     line-height: 1;
 }
 
-.logo-main {
-    font-size: 24px;
-    font-weight: 900;
-    letter-spacing: 2px;
+.logo {
+    display: flex;
+    align-items: center;
+    line-height: 1;
 }
 
-.logo-sub {
-    font-size: 9px;
-    font-weight: 700;
-    letter-spacing: 4px;
-    margin-top: 5px;
+.logo img {
+    height: 45px;
+    width: auto;
+    display: block;
 }
-
 
 /* NAVIGATION */
 

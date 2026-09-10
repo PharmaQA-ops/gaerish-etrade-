@@ -935,3 +935,21 @@ img {
         align-items: flex-start;
     }
 }
+/* =========================================
+   ABOUT HERO - TEXT VISIBILITY
+========================================= */
+
+.about-hero .eyebrow {
+    color: #ffffff !important;
+
+    text-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.about-hero h1 {
+    color: #ffffff !important;
+}
+
+.about-hero p {
+    color: #ffffff !important;
+}

@@ -843,3 +843,6 @@ img {
 .about-hero {
     background-image: url("../images/banner/about.jpg");
 }
+.products-hero {
+    background: #f4f6f8;
+}

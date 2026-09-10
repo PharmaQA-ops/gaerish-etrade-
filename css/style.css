@@ -826,3 +826,10 @@ img {
 .other-image {
     background: url("../images/products/other-materials.jpg") center/cover no-repeat;
 }
+/* =========================================
+   ABOUT PAGE HERO
+========================================= */
+
+.about-hero {
+    background-image: url("../images/banner/about.jpg");
+}

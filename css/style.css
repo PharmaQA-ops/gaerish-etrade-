@@ -68,20 +68,19 @@ img {
 
 .logo {
     display: flex;
-    flex-direction: column;
 
-    line-height: 1;
-}
-
-.logo {
-    display: flex;
     align-items: center;
+
     line-height: 1;
 }
 
 .logo img {
     height: 45px;
+
     width: auto;
+
+    max-width: none;
+
     display: block;
 }
 
@@ -575,66 +574,66 @@ img {
 }
 
 
-/*
-   Replace these backgrounds later
-   with your actual product images.
-*/
+/* =========================================
+   PRODUCT IMAGES
+========================================= */
 
-.container-image {
-    background:
-        linear-gradient(
-            135deg,
-            #657182,
-            #c4c9cf
-        );
+.product-image {
+    height: 250px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: #e9edf1;
 }
 
-.aluminium-image {
-    background:
-        linear-gradient(
-            135deg,
-            #b6bbc0,
-            #eceeef
-        );
+.product-image img {
+    width: 100%;
+
+    height: 100%;
+
+    max-width: none;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    display: block;
+
+    transition: transform 0.4s ease;
 }
 
-.metals-image {
-    background:
-        linear-gradient(
-            135deg,
-            #464f5c,
-            #9da5ae
-        );
-}
-
-.other-image {
-    background:
-        linear-gradient(
-            135deg,
-            #596576,
-            #aeb5be
-        );
+.product-card:hover .product-image img {
+    transform: scale(1.05);
 }
 
 .product-overlay {
     position: absolute;
 
     top: 18px;
+
     right: 18px;
 
     width: 35px;
+
     height: 35px;
 
     border-radius: 50%;
 
-    background: rgba(255,255,255,0.9);
+    background: rgba(255, 255, 255, 0.9);
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     font-size: 10px;
+
     font-weight: 800;
+
+    z-index: 2;
 }
 
 .product-content {

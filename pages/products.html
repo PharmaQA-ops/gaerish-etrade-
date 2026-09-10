@@ -10,6 +10,9 @@
 
     <title>Products | Gaerish E-Trade</title>
 
+    <meta name="description"
+          content="Explore containers, aluminium, metals, scrap and other materials traded by Gaerish E-Trade.">
+
     <link rel="stylesheet"
           href="../css/style.css">
 
@@ -22,24 +25,31 @@
 <body>
 
 
+<!-- =========================================
+     HEADER
+========================================= -->
+
 <header class="header">
 
     <div class="container nav-container">
 
-        <a href="../index.html" class="logo">
 
-            <span class="logo-main">
-                GAERISH
-            </span>
+        <!-- LOGO -->
 
-            <span class="logo-sub">
-                E-TRADE
-            </span>
+        <a href="../index.html"
+           class="logo">
+
+            <img src="../images/logo/logo.png"
+                 alt="Gaerish E-Trade Logo">
 
         </a>
 
 
-        <nav class="navbar">
+
+        <!-- NAVIGATION -->
+
+        <nav class="navbar"
+             id="navbar">
 
             <a href="../index.html">
                 Home
@@ -61,10 +71,27 @@
 
         </nav>
 
+
+
+        <!-- MOBILE MENU -->
+
+        <button class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open Menu">
+
+            ☰
+
+        </button>
+
     </div>
 
 </header>
 
+
+
+<!-- =========================================
+     PAGE HERO
+========================================= -->
 
 <section class="hero">
 
@@ -74,10 +101,12 @@
             OUR PRODUCTS
         </span>
 
+
         <h1>
             Trading
             <span>What Matters.</span>
         </h1>
+
 
         <p>
             Explore the categories covered by
@@ -89,18 +118,65 @@
 </section>
 
 
+
+<!-- =========================================
+     PRODUCTS
+========================================= -->
+
 <section class="products-section">
 
     <div class="container">
 
+
+        <div class="section-heading">
+
+            <span class="eyebrow">
+                OUR PORTFOLIO
+            </span>
+
+
+            <h2>
+                What We Trade
+            </h2>
+
+
+            <p>
+                Selected products and materials
+                based on market requirements.
+            </p>
+
+        </div>
+
+
+
         <div class="product-grid">
 
+
+            <!-- =================================
+                 CONTAINERS
+            ================================== -->
 
             <article class="product-card"
                      id="containers">
 
-                <div class="product-image container-image">
+
+                <div class="product-image">
+
+                    <img src="../images/products/Container.jpg"
+                         alt="Containers"
+                         loading="lazy">
+
+
+                    <div class="product-overlay">
+
+                        <span>
+                            01
+                        </span>
+
+                    </div>
+
                 </div>
+
 
                 <div class="product-content">
 
@@ -108,13 +184,16 @@
                         01
                     </span>
 
+
                     <h3>
                         Containers
                     </h3>
 
+
                     <p>
                         New and used containers for
-                        commercial and industrial requirements.
+                        commercial and industrial
+                        requirements.
                     </p>
 
                 </div>
@@ -122,11 +201,32 @@
             </article>
 
 
+
+            <!-- =================================
+                 ALUMINIUM
+            ================================== -->
+
             <article class="product-card"
                      id="aluminium">
 
-                <div class="product-image aluminium-image">
+
+                <div class="product-image">
+
+                    <img src="../images/products/aluminium.jpg"
+                         alt="Aluminium"
+                         loading="lazy">
+
+
+                    <div class="product-overlay">
+
+                        <span>
+                            02
+                        </span>
+
+                    </div>
+
                 </div>
+
 
                 <div class="product-content">
 
@@ -134,13 +234,16 @@
                         02
                     </span>
 
+
                     <h3>
                         Aluminium
                     </h3>
 
+
                     <p>
-                        Aluminium products and materials
-                        across selected trading requirements.
+                        Aluminium products and
+                        materials across selected
+                        trading requirements.
                     </p>
 
                 </div>
@@ -148,11 +251,32 @@
             </article>
 
 
+
+            <!-- =================================
+                 METALS & SCRAP
+            ================================== -->
+
             <article class="product-card"
                      id="metals">
 
-                <div class="product-image metals-image">
+
+                <div class="product-image">
+
+                    <img src="../images/products/scrap.jpg"
+                         alt="Metals and Scrap"
+                         loading="lazy">
+
+
+                    <div class="product-overlay">
+
+                        <span>
+                            03
+                        </span>
+
+                    </div>
+
                 </div>
+
 
                 <div class="product-content">
 
@@ -160,13 +284,16 @@
                         03
                     </span>
 
+
                     <h3>
-                        Metals & Scrap
+                        Metals &amp; Scrap
                     </h3>
+
 
                     <p>
                         Selected metals and recyclable
-                        materials for commercial trading.
+                        materials for commercial
+                        trading.
                     </p>
 
                 </div>
@@ -174,11 +301,32 @@
             </article>
 
 
+
+            <!-- =================================
+                 OTHER MATERIALS
+            ================================== -->
+
             <article class="product-card"
                      id="other">
 
-                <div class="product-image other-image">
+
+                <div class="product-image">
+
+                    <img src="../images/products/scrap.jpg"
+                         alt="Other Materials"
+                         loading="lazy">
+
+
+                    <div class="product-overlay">
+
+                        <span>
+                            04
+                        </span>
+
+                    </div>
+
                 </div>
+
 
                 <div class="product-content">
 
@@ -186,9 +334,11 @@
                         04
                     </span>
 
+
                     <h3>
                         Other Materials
                     </h3>
+
 
                     <p>
                         Other products based on market
@@ -207,9 +357,15 @@
 </section>
 
 
+
+<!-- =========================================
+     CTA
+========================================= -->
+
 <section class="cta">
 
     <div class="container cta-content">
+
 
         <div>
 
@@ -217,9 +373,11 @@
                 HAVE A REQUIREMENT?
             </span>
 
+
             <h2>
                 Let's Talk.
             </h2>
+
 
             <p>
                 Contact our team for product
@@ -228,9 +386,12 @@
 
         </div>
 
+
         <a href="contact.html"
            class="btn btn-light">
+
             Contact Us
+
         </a>
 
     </div>
@@ -238,14 +399,141 @@
 </section>
 
 
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
 <footer class="footer">
+
+    <div class="container footer-grid">
+
+
+        <!-- BRAND -->
+
+        <div class="footer-brand">
+
+            <a href="../index.html"
+               class="logo">
+
+                <img src="../images/logo/logo.png"
+                     alt="Gaerish E-Trade Logo">
+
+            </a>
+
+
+            <p>
+                Trading in containers, aluminium,
+                metals and other materials.
+            </p>
+
+        </div>
+
+
+
+        <!-- NAVIGATION -->
+
+        <div>
+
+            <h4>
+                Navigation
+            </h4>
+
+
+            <a href="../index.html">
+                Home
+            </a>
+
+
+            <a href="about.html">
+                About
+            </a>
+
+
+            <a href="products.html">
+                Products
+            </a>
+
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </div>
+
+
+
+        <!-- PRODUCTS -->
+
+        <div>
+
+            <h4>
+                Products
+            </h4>
+
+
+            <a href="#containers">
+                Containers
+            </a>
+
+
+            <a href="#aluminium">
+                Aluminium
+            </a>
+
+
+            <a href="#metals">
+                Metals &amp; Scrap
+            </a>
+
+
+            <a href="#other">
+                Other Materials
+            </a>
+
+        </div>
+
+
+
+        <!-- CONTACT -->
+
+        <div>
+
+            <h4>
+                Contact
+            </h4>
+
+
+            <p>
+                Gaerish Etrade Pvt Ltd
+            </p>
+
+
+            <p>
+                Chennai, India
+            </p>
+
+
+            <a href="contact.html">
+                Get in Touch →
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- COPYRIGHT -->
 
     <div class="footer-bottom">
 
         <div class="container">
 
-            © <span class="current-year"></span>
-            Gaerish Logistics Pvt Ltd.
+            ©
+            <span class="current-year"></span>
+
+            Gaerish Etrade Pvt Ltd.
             All Rights Reserved.
 
         </div>
@@ -255,7 +543,11 @@
 </footer>
 
 
+
+<!-- JAVASCRIPT -->
+
 <script src="../js/main.js"></script>
+
 
 </body>
 

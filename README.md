@@ -66,3 +66,8 @@ are currently included.
 ## Future Development
 
 Future functionality can be added if required.
+
+
+## Contact
+
+Email: enquiry@gaerishetrade.com
